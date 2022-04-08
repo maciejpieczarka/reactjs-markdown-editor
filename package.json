@@ -1,5 +1,14 @@
 {
   "name": "reactjs-markdown-generator",
+  "description": "React.js Markdown Generator",
+  "main": "index.js",
+  "devDependencies": {},
+  "keywords": [],
+  "contributors": [
+    "Maciej Pieczarka",
+    "Alicja Janeczko"
+  ],
+  "license": "ISC",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
