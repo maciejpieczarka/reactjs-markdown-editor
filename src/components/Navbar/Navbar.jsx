@@ -6,14 +6,17 @@ import "./navbar.css";
 const Navbar = () => {
   return (
     <header>
-      <Link to="/">
+      <Link to="/" className="logo">
         <h1>Logo</h1>
       </Link>
-      <nav>
-        <ul>
-          <li>Item 1</li>
-          <li>Item 2</li>
-          <li>Item 3</li>
+      <nav className="nav-bar">
+        <ul className="nav-list">
+          <li className="nav-item">
+            <Link to="/">Generator</Link>
+          </li>
+          <li className="nav-item">
+            <Link to="/About">About</Link>
+          </li>
         </ul>
       </nav>
     </header>
