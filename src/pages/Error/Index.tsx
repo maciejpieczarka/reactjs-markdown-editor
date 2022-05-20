@@ -1,6 +1,6 @@
-import React from 'react';
+import React, { FC } from 'react';
 
-const Index = () => {
+const Index: FC = () => {
   return (
     <div>Error 404 | Not Found</div>
   )

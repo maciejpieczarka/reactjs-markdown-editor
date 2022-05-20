@@ -26,10 +26,8 @@ ul, ol {
   list-style: none;
 }
 
-.app {
-  max-width: 90%;
-  margin: auto;
-  min-height: 100vh;
+.container {
+  max-width: 150rem;
 }
 
 /* === GLOBAL STYLES === */

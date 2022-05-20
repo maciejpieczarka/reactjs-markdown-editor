@@ -1,8 +1,8 @@
-import React from 'react';
+import React, { FC } from 'react';
 
 import './generator.css';
 
-const Index = () => {
+const Index: FC = () => {
   return (
     <div>Generator</div>
   )

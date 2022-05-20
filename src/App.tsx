@@ -1,6 +1,6 @@
 import React from "react";
 
-import Navbar from "./components/Navbar/Navbar";
+import Navbar from "./components/Toolbar/Toolbar";
 import Footer from "./components/Footer/Footer";
 import Generator from "./pages/Generator/Index";
 import About from "./pages/About/Index";
