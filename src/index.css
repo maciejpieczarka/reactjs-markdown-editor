@@ -28,6 +28,6 @@ ol {
 }
 
 .text-container {
-    flex: 1;
+    flex: 0 0 50%;
     height: 100%;
 } /* === GLOBAL STYLES === */ ;
