@@ -22,11 +22,6 @@ a {
     text-decoration: none;
 }
 
-ul,
-ol {
-    list-style: none;
-}
-
 .text-container {
     flex: 0 0 50%;
     height: 100%;

@@ -1,0 +1,10 @@
+.preview_wrapper.markdown-body {
+    background-color: #393d45;
+    padding: 1.2rem;
+    overflow: auto;
+    color: #bcc3c0;
+}
+
+.preview_wrapper.markdown-body pre {
+    background-color: rgba(27, 31, 35, 0.45);
+}

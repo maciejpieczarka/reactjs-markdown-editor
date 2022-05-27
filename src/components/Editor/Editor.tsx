@@ -1,19 +1,32 @@
-import React, { useState, useCallback, useEffect } from 'react';
+import { EditorState } from '@codemirror/state';
+import React, { useCallback, useEffect } from 'react';
 import useCodeMirror from './../../hooks/useCodeMirror';
 // Css
 import styles from './editor.module.css';
 
-interface IEditorProps {}
+interface IEditorProps {
+    doc: string;
+    onChange: (doc: string) => void;
+}
 
 const Editor: React.FC<IEditorProps> = (props) => {
-    const onChange = { props };
+    const { onChange } = props;
+    const handleChange = useCallback(
+        (state: EditorState) => {
+            onChange(state.doc.toString());
+        },
+        [onChange]
+    );
 
     const [refContainer, editorView] = useCodeMirror<HTMLDivElement>({
-        doc: '# Hi, JW!',
-        onChange: () => {},
+        doc: props.doc,
+        onChange: handleChange,
     });
 
-    useEffect(() => {}, []);
+    useEffect(() => {
+        if (editorView) {
+        }
+    }, [editorView]);
     return (
         <div
             className={`text-container ` + styles.editor_wrapper}

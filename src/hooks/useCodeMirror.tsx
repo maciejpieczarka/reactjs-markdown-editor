@@ -24,7 +24,7 @@ import {
     bracketMatching,
 } from '@codemirror/language';
 import { languages } from '@codemirror/language-data';
-import { oneDark } from '@codemirror/theme-one-dark'; //
+import { oneDark } from '@codemirror/theme-one-dark';
 
 const transparentTheme = EditorView.theme({
     '&': {
@@ -61,7 +61,7 @@ const useCodeMirror = <T extends Element>(
 ): [React.MutableRefObject<T | null>, EditorView?] => {
     const refContainer = useRef<T>(null);
     const [editorView, setEditorView] = useState<EditorView>();
-    const onChange = { props };
+    const { onChange } = props;
 
     useEffect(() => {
         if (!refContainer.current) {
@@ -88,7 +88,6 @@ const useCodeMirror = <T extends Element>(
                     addKeymap: true,
                 }),
                 oneDark,
-
                 keymap.of([
                     ...defaultKeymap,
                     ...historyKeymap,
@@ -96,6 +95,12 @@ const useCodeMirror = <T extends Element>(
                     ...searchKeymap,
                     indentWithTab,
                 ]),
+                EditorView.lineWrapping,
+                EditorView.updateListener.of((update) => {
+                    if (update.changes) {
+                        onChange && onChange(update.state);
+                    }
+                }),
             ],
         });
 
