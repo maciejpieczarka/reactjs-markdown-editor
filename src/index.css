@@ -4,7 +4,6 @@
 *::before,
 *::after {
     box-sizing: border-box;
-    font-family: monospace;
 }
 
 html {
@@ -15,6 +14,7 @@ html {
 body {
     margin: 0;
     padding: 0;
+    font-family: sans-serif;
 }
 
 a {
@@ -25,4 +25,4 @@ a {
 .text-container {
     flex: 0 0 50%;
     height: 100%;
-} /* === GLOBAL STYLES === */ ;
+} /* === GLOBAL STYLES === */

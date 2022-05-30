@@ -6,4 +6,8 @@ import App from './App';
 
 const container = document.getElementById('root');
 const root = createRoot(container as HTMLElement);
-root.render(<Router><App /></Router>);
+root.render(
+    <Router>
+        <App />
+    </Router>
+);

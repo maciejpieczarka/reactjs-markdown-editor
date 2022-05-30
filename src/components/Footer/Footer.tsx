@@ -1,11 +1,14 @@
-import React, { FC } from 'react';
+import React from 'react';
 import { AiOutlineGithub } from 'react-icons/ai';
 
 import './footer.css';
 
-const Footer: FC = () => {
+// interface
+interface IFooterProps {}
+
+const Footer: React.FC<IFooterProps> = (props) => {
     return (
-        <footer>
+        <footer className="footer-wrapper">
             <div className="socials">
                 <a
                     rel="noreferrer"

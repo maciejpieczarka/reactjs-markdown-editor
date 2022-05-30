@@ -1,31 +1,27 @@
-footer {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    right: 0;
+.footer-wrapper {
     display: flex;
     align-items: center;
-    justify-content: space-around;
-    background-color: #464859;
     width: 100%;
     height: 4rem;
     padding: 0 5rem;
+    justify-content: space-around;
+    background-color: #464859;
 }
 
 .social-link {
     display: flex;
     align-items: center;
-    color: #f0f0f0;
     font-size: 1.6rem;
     justify-content: space-between;
-    width: 15rem;
+    gap: 1rem;
+    color: #f0f0f0;
 }
 
 .social-icon {
     color: #f0f0f0;
     width: 3.2rem;
     height: 3.2rem;
-    transition: color 300ms ease;
+    transition: all 300ms ease;
 }
 
 .social-icon:hover {
@@ -33,6 +29,6 @@ footer {
 }
 
 .copy {
-    color: #f0f0f0;
     font-size: 1.6rem;
+    color: #f0f0f0;
 }
