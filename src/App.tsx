@@ -16,7 +16,7 @@ function App() {
             </Routes>
 
             {/* Footer Component */}
-            {/* <Footer /> */}
+            <Footer />
         </div>
     );
 }

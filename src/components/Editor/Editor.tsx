@@ -2,7 +2,7 @@ import { EditorState } from '@codemirror/state';
 import React, { useCallback, useEffect } from 'react';
 import useCodeMirror from './../../hooks/useCodeMirror';
 // Css
-import styles from './editor.module.css';
+import './editor.css';
 
 interface IEditorProps {
     doc: string;
@@ -28,10 +28,7 @@ const Editor: React.FC<IEditorProps> = (props) => {
         }
     }, [editorView]);
     return (
-        <div
-            className={`text-container ` + styles.editor_wrapper}
-            ref={refContainer}
-        ></div>
+        <div className="text-container editor-wrapper" ref={refContainer}></div>
     );
 };
 

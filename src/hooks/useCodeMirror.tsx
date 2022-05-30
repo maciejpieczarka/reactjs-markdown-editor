@@ -28,7 +28,7 @@ import { oneDark } from '@codemirror/theme-one-dark';
 
 const transparentTheme = EditorView.theme({
     '&': {
-        // backgroundColor: 'transparent !important',
+        backgroundColor: '#292B36 !important',
         height: '100%',
     },
 });

@@ -2,7 +2,7 @@ import React, { useCallback, useState } from 'react';
 import Editor from './../../components/Editor/Editor';
 import Preview from './../../components/Preview/Preview';
 
-import styles from './generator.module.css';
+import './generator.css';
 
 interface iGeneratorProps {}
 
@@ -16,7 +16,7 @@ const Generator: React.FC<iGeneratorProps> = (props) => {
     }, []);
 
     return (
-        <div className={styles.generator_wrapper}>
+        <div className="generator-wrapper">
             <Editor onChange={handleDocChange} doc={doc} />
             <Preview doc={doc} />
         </div>
