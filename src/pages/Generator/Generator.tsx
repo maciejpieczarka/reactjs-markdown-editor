@@ -1,6 +1,7 @@
 import React, { useCallback, useState } from 'react';
 import Editor from './../../components/Editor/Editor';
 import Preview from './../../components/Preview/Preview';
+// import Toolbar from '../../components/Toolbar/Toolbar';
 
 import './generator.css';
 
